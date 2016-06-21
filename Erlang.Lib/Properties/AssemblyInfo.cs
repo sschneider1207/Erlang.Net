@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Erlang.Lib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("OverDrive, Inc.")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Erlang.Lib")]
-[assembly: AssemblyCopyright("Copyright © OverDrive, Inc. 2016")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
