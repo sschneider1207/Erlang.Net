@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TestConsole")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("OverDrive, Inc.")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TestConsole")]
-[assembly: AssemblyCopyright("Copyright © OverDrive, Inc. 2016")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
