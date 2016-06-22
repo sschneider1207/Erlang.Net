@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Erlang.Lib.Extensions;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -157,7 +158,7 @@ namespace Erlang.Lib
                 Array.Reverse(portNoBuf);
             }
 
-            var nodeTypeBuf = new byte[] {77};
+            var nodeTypeBuf = new byte[] { 72 };
 
             var protocolBuf = new byte[] {0};
 
@@ -209,7 +210,7 @@ namespace Erlang.Lib
 
             Buffer.BlockCopy(extraLengthBuf, 0, reqBuf, offset, extraLengthBuf.Length);
 
-            return Utils.PrefixBufferLength(reqBuf);
+            return reqBuf.PrefixBufferLength();
         }
 
         private static bool ParseAlive2Resp(byte[] buf, out byte result, out ushort creation)
@@ -240,7 +241,7 @@ namespace Erlang.Lib
             var reqBuf = new byte[reqLength];
             reqBuf[0] = 122;
             Buffer.BlockCopy(nameBuf, 0, reqBuf, 1, nameBuf.Length);
-            return Utils.PrefixBufferLength(reqBuf);
+            return reqBuf.PrefixBufferLength();
         }
 
         private static bool ParsePort2Resp(byte[] buf, out byte result, out ushort port)
@@ -269,6 +270,6 @@ namespace Erlang.Lib
             return true;
         }
 
-        private static byte[] NamesReq() => Utils.PrefixBufferLength(new byte[] {110});
+        private static byte[] NamesReq() => (new byte[] { 110 }).PrefixBufferLength();
     }
 }

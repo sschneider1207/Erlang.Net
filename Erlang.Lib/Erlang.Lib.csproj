@@ -40,9 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DistributionHandshake.cs" />
-    <Compile Include="DistributionHandshakeModels\ReceiveNameRequest.cs" />
+    <Compile Include="DistributionHandshake\CapabilityFlags.cs" />
+    <Compile Include="DistributionHandshake\ChallengeAck.cs" />
+    <Compile Include="DistributionHandshake\ChallengeReply.cs" />
+    <Compile Include="DistributionHandshake\NameRequest.cs" />
+    <Compile Include="DistributionHandshake\ChallengeRequest.cs" />
+    <Compile Include="DistributionHandshake\Status.cs" />
     <Compile Include="EpmdConnection.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
